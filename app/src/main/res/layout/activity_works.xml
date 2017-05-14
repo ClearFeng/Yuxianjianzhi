@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgg">
+    
+
+     <RelativeLayout
+         android:id="@+id/relayout3"
+         android:layout_width="match_parent"
+         android:layout_height="65dp"
+         android:background="#000000">
+        <ImageButton 
+            android:id="@+id/back3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:text="我的作品"
+            android:textSize="21sp"/>
+        
+        <ImageButton 
+            android:id="@+id/home3"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/home"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+        <ListView
+            android:background="#00ff00ff"
+            android:id="@+id/work_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

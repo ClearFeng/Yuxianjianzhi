@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.example.papercut"
+        minSdkVersion 15
+        targetSdkVersion 25
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+repositories {
+    jcenter()
+}
+dependencies {
+    compile 'com.android.support:support-v4:25.0.0'
+    compile files('libs/picasso-2.5.2.jar')
+    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.0'
+    compile project(':openCVLibrary320')
+}
